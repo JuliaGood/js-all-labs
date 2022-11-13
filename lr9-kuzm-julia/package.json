@@ -5,13 +5,15 @@
   "main": "app/index.js",
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild --platforms win64 --buildDir dist/ src/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nwbuild ./src --version=0.69.1 --flavour=sdk --platform=win --arch=x64 --outDir=./dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nw": "^0.44.3",
-    "nw-builder": "^3.5.7"
+    "nw": "^0.70.1",
+    "nw-builder": "^4.0.0-rc.8"
+  },
+  "volta": {
+    "node": "18.12.1"
   }
 }

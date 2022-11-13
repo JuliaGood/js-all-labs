@@ -216,6 +216,7 @@ function moveBall() {
   if (ball.y + ball.size > canvas.height) {
     showAllBricks();
     score = 0;
+    ball.speed = 4;
   }
 }
 
@@ -244,6 +245,6 @@ function increaseScore() {
 
   if (score >= 25) {
     scoreCounter.innerText = "ИПЗ лучшие!!!";
-    requestAnimationFrame(null); // если набрал 25 баллов и нужно остановить игру
+    // requestAnimationFrame(null); // если набрал 25 баллов и нужно остановить игру
   }
 }
