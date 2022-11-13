@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Forms</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <h1>HTML forms</h1>
+    <h2>LR 7</br>Task N7</h2>
+    <h3>Отправьте телеграмму</h3>
+
+    <form name="Sel2">
+      <label
+        ><input
+          type="radio"
+          name="Code"
+          value="Good"
+          onClick="if(this.checked) CheckRadio(this.form,this.value);"
+        />
+        Явка в норме
+      </label>
+      <br />
+      <label
+        ><input
+          type="radio"
+          name="Code"
+          value="Bad"
+          onClick="if(this.checked) CheckRadio(this.form,this.value);"
+        />
+        Явка провалена
+      </label>
+      <textarea name="Letter" rows="3" cols="35"> </textarea>
+      <input
+        type="button"
+        value="Готово"
+        onClick="alert(document.Sel2.Letter.value);"
+      />
+      <input type="reset" value="Сброс" />
+    </form>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

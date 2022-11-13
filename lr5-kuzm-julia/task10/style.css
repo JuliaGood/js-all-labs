@@ -1,0 +1,21 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1, h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+  text-align: center;
+}
+h2 {
+  color: cadetblue;
+}
+img {
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  max-width: 80%;
+}

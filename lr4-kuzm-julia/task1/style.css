@@ -1,0 +1,7 @@
+h1, h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+h2 {
+  color: cadetblue;
+}

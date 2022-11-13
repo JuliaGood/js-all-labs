@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HTML Forms</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <h1>HTML forms</h1>
+  <h2>LR 7</br>Task N6</h2>
+  <H3>Заполните анкету</H3>
+
+  <FORM NAME="Sel1">
+    <!-- Анкета -->
+    <TABLE>
+      <TR>
+        <TD><B>Фамилия:</B></TD>
+        <TD><INPUT NAME="Family" SIZE="20" onBlur="this.value=this.value.toUpperCase()" /></TD>
+      </TR>
+      <TR>
+        <TD><B>Имя:</B></TD>
+        <TD><INPUT NAME="Name" SIZE="20" onBlur="this.value=this.value.toUpperCase()" /></TD>
+      </TR>
+      <TR>
+        <TD><B>Возраст:</B></TD>
+        <TD><INPUT NAME="Age" SIZE="3" VALUE="18" onBlur="this.value=checkAge(this.value)" onFocus="this.select()" />
+        </TD>
+      </TR>
+      <TR>
+        <TD><B>Телефон:</B></TD>
+        <TD><INPUT NAME="Phone" SIZE="10" /></TD>
+      </TR>
+    </TABLE>
+    <!-- Кнопки готовности и сброса -->
+    <INPUT TYPE="button" VALUE="Готово" onClick="complete();">
+    <INPUT TYPE="reset" VALUE="Сброс">
+  </FORM>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

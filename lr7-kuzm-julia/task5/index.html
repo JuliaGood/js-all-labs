@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Forms</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <h1>HTML forms</h1>
+    <h2>LR 7</br>Task N5</h2>
+
+    <FORM NAME="Sel">
+      <!-- Пустой список ссылок-->
+      <SELECT NAME="ListOfLinks"> </SELECT>
+      <!-- Кнопка активизации выбранной ссылки-->
+      <INPUT
+        TYPE="button"
+        VALUE="Переход"
+        onClick="window.location.href=document.links[Sel.ListOfLinks.selectedIndex];"
+      />
+    </FORM>
+    <A HREF="https://rozetka.com.ua/"></A>
+    <A HREF="https://allo.ua/"></A>
+    <A HREF="https://www.olx.ua/"></A>
+    <A HREF="https://www.zieit.edu.ua/"></A> 
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

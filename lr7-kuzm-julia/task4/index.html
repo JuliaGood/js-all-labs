@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Forms</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <h1>HTML forms</h1>
+    <h2>LR 7</br>Task N4</h2>
+
+    <FORM NAME="Test2">
+      <SELECT NAME="Item" SIZE=5>
+        <OPTION VALUE="tea" SELECTED>Чай
+        <OPTION VALUE ="coffee">Кофе
+        <OPTION VALUE ="milk">Молоко
+        <OPTION VALUE ="cocoa">Какао
+        <OPTION VALUE ="juice">Сок
+      </SELECT>
+      <INPUT TYPE="button" VALUE="Пусть кофе"
+        onClick="Test2.Item.options[1].selected=true;">
+      <INPUT TYPE="button" VALUE="Посмотрим"
+        onClick="btnClick2();">
+    </FORM>    
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+h1, h2, h3 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+h2 {
+  color: cadetblue;
+}
+h3 {
+  color: aquamarine;
+}
